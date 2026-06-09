@@ -1,0 +1,8 @@
+CompileFlags:
+  CompilationDatabase: "."
+  Add: 
+    - "-D__wii__"
+  Remove: 
+    - "-mrvl"
+    - "-mhard-float"
+    - "-meabi"
