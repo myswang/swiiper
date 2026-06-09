@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Mike Wang
+// SPDX-License-Identifier: MIT
+
 #ifndef MENU_H
 #define MENU_H
 

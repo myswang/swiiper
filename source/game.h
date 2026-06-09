@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Mike Wang
+// SPDX-License-Identifier: MIT
+
 #ifndef GAME_H
 #define GAME_H
 

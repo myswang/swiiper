@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Mike Wang
+// SPDX-License-Identifier: MIT
+
 #include "input.h"
 #include "wiiuse/wpad.h"
 
