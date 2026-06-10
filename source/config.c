@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Mike Wang
+// SPDX-License-Identifier: MIT
+
 #include "config.h"
 #include "game.h"
 #include <stdio.h>
