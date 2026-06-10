@@ -6,7 +6,7 @@
 
 ## Installation
 
-Download the .zip file from the [Releases](https://github.com/myswang/releases) page, extract and copy the files to the root of your SD card. You can also get the standalone .dol file and load it with Dolphin, if you *really* want to (a real Wii is recommended)
+Download the .zip file from the [Releases](https://github.com/myswang/releases) page, extract and copy the files to the root of your SD card.
 
 ### Building from source
 
