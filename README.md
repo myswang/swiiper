@@ -15,6 +15,10 @@ You will need to install the **devkitPro** toolchain for the Wii, along with the
 - [devkitPro Getting Started guide](https://devkitpro.org/wiki/Getting_Started)
 - [GRRLIB](https://github.com/GRRLIB/GRRLIB)
 
+Once you are all setup, run `make` to build the project, and it should produce a `swiiper.dol` file.
+
+***NOTE:** In order to allow saving a custom difficulty configuration, the game will look for a `config.ini` file on the SD card, stored at `sd:/apps/swiiper/config.ini`. The app might crash or fail to load if this file + directory structure doesn't exist. Please make sure this file exists before running the game!*
+
 ## Controls
 
 ### Wii remote (nunchuk)
@@ -27,7 +31,7 @@ You will need to install the **devkitPro** toolchain for the Wii, along with the
 
 **_ (Z)** - chord cells
 
-*NOTE: Wii remote must be held SIDEWAYS if used on its own.*
+***NOTE:** Wii remote must be held SIDEWAYS if used on its own.*
 
 ### Classic/GameCube controller
 
