@@ -6,7 +6,7 @@
 
 ## Installation
 
-Download the .zip file from the [Releases](https://github.com/myswang/releases) page, extract and copy the files to the root of your SD card.
+Download the .zip file from the [Releases](https://github.com/myswang/swiiper/releases) page, extract and copy the files to the root of your SD card.
 
 ### Building from source
 
