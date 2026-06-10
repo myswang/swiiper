@@ -1,8 +1,11 @@
 // Copyright (c) 2026 Mike Wang
 // SPDX-License-Identifier: MIT
 
+#include <assert.h>
+#include <fat.h>
 #include <stdlib.h>
 
+#include "config.h"
 #include "game.h"
 #include "grrlib.h"
 #include "input.h"
@@ -21,6 +24,8 @@ int main(void) {
     GRRLIB_Init();
     srand((u32)gettime());
 
+    assert(fatInitDefault() && "Failed to initialize FAT");
+
     Renderer r;
     Renderer_Init(&r);
     Input input;
@@ -33,7 +38,9 @@ int main(void) {
                                            ? "Expert (30x16, 99 mines)"
                                            : "Expert (24x16, 79 mines)";
 
-    GameConfig custom_options = (GameConfig){9, 9, 72};
+    GameConfig custom_options = MEDIUM_MODE;
+    Config_ReadFromFile(&custom_options);
+
     GameConfig new_custom_options = custom_options;
     u32 cur_max_mines = Game_GetMaxMines(custom_options);
 
@@ -158,6 +165,7 @@ int main(void) {
                     cur_scene = SCENE_DIFFICULTY_MENU;
                     custom_options = new_custom_options;
                     Menu_UpdateCustomLabel(custom_options);
+                    Config_WriteToFile(&custom_options);
                     break;
                 case 4:
                     cur_scene = SCENE_DIFFICULTY_MENU;
