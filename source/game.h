@@ -11,9 +11,9 @@ enum {
     MAX_H = 16,
     MAX_MINES = 99,
 
-    MIN_W = 9,
-    MIN_H = 9,
-    MIN_MINES = 10
+    MIN_W = 4,
+    MIN_H = 4,
+    MIN_MINES = 1
 };
 
 typedef enum {
