@@ -193,7 +193,8 @@ void Game_HandleAction(Game *game, GameAction action) {
         if (game->cur_x < game->config.num_cols - 1)
             game->cur_x++;
         break;
-    case GAME_REVEAL_CELL:
+    case GAME_REVEAL_CELL:        
+        Game_ChordCells(game);
         if (cur_cell->state == CELL_HIDDEN) {
             if (game->state == GAME_IDLE) {
                 Game_SpawnMines(game);
@@ -203,7 +204,6 @@ void Game_HandleAction(Game *game, GameAction action) {
             Game_RevealCell(game, game->cur_x, game->cur_y);
             Game_CheckGameOver(game);
         }
-        Game_ChordCells(game);
         break;
     case GAME_FLAG_CELL:
         if (cur_cell->state == CELL_HIDDEN) {
